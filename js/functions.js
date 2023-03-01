@@ -10,7 +10,7 @@ isPalindrom();
 
 const extractNumber = (string) => {
   if (typeof string === 'number') {
-    return Math.abs(string);
+    string = String(string);
   }
   let result = '';
   for (let i = 0; i < string.length; i++) {
